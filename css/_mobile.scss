@@ -1,0 +1,45 @@
+@media (max-width:767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top {
+    height: 735px;
+  }
+
+  .header {
+    &__title {
+      padding-top: 238px;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+    &__text {
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+}
+
+.top__button {
+  margin: 0 auto;
+  display: block;
+}
+
+.menu {
+  height: 1221px;
+  &__list {
+    padding-top: 12;
+
+  }
+}
+.item {
+  margin-top: 0;
+}
+
+.item-img {
+  width: 343px;
+}
