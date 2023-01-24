@@ -96,7 +96,7 @@ a {
   color: #FFFFFF;
 }
 .header__text {
-  width: 481px;
+  max-width: 481px;
   padding-bottom: 44px;
   font-weight: 300;
   font-size: 18px;
@@ -118,6 +118,11 @@ a {
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
+  transition: all 500ms ease;
+}
+.top__button:hover {
+  background: #001944;
+  color: #10ec52;
 }
 
 .menu {
@@ -129,12 +134,14 @@ a {
 }
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 
 .item {
   position: relative;
   margin-top: 128px;
+  transition: all 1.2s;
 }
 .item-img {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
@@ -149,4 +156,53 @@ a {
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
+  transition: all 0.2s;
+}
+.item-link-link:hover {
+  text-decoration: underline;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+  }
+  .header__title {
+    padding-top: 238px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .header__text {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+.top__button {
+  margin: 0 auto;
+  display: block;
+}
+
+.menu {
+  height: 1221px;
+}
+.menu__list {
+  padding-top: 12;
+}
+
+.item {
+  margin-top: 0;
+}
+
+.item-img {
+  width: 343px;
 }/*# sourceMappingURL=style.css.map */
