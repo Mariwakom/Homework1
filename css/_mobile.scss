@@ -6,6 +6,7 @@
 
   .top {
     height: 735px;
+    background-position: top 100px;
   }
 
   .header {
@@ -22,24 +23,24 @@
       text-align: center;
     }
   }
-}
-
-.top__button {
-  margin: 0 auto;
-  display: block;
-}
-
-.menu {
-  height: 1221px;
-  &__list {
-    padding-top: 12;
-
+  .top__button {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .menu {
+    height: 1221px;
+    &__list {
+      padding-top: 12;
+  
+    }
+  }
+  .item {
+    margin-top: 0;
+  }
+  
+  .item-img {
+    width: 343px;
   }
 }
-.item {
-  margin-top: 0;
-}
 
-.item-img {
-  width: 343px;
-}
