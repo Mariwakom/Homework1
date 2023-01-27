@@ -108,7 +108,7 @@ a {
   font-weight: bold;
 }
 
-.top__button {
+.button {
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
@@ -120,7 +120,7 @@ a {
   color: #FFFFFF;
   transition: all 500ms ease;
 }
-.top__button:hover {
+.button:hover {
   background: #001944;
   color: #10ec52;
 }
@@ -166,7 +166,41 @@ a {
   transform: scale(1.05);
 }
 
+.game-one {
+  background-color: #000915;
+}
+.game-one__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game-one__condition {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
 
+.game-one__content {
+  padding-top: 233px;
+  padding-bottom: 233px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 122px;
+}
+
+.block-left {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.block-right {
+  grid-column: span 5;
+}
 
 @media (max-width: 767px) {
   .center {
