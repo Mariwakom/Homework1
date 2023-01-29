@@ -6,7 +6,7 @@
 
   .top {
     height: 735px;
-    background-position: top 100px;
+    background-position-x: 31%;
   }
 
   .header {
@@ -23,7 +23,7 @@
       text-align: center;
     }
   }
-  .top__button {
+  .button {
     margin: 0 auto;
     display: block;
   }
@@ -32,9 +32,9 @@
     height: 1221px;
     &__list {
       padding-top: 12;
-  
     }
   }
+  
   .item {
     margin-top: 0;
   }
@@ -42,5 +42,35 @@
   .item-img {
     width: 343px;
   }
+
+  
+  .game-one {
+    &__content {
+      padding-top: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+    }
+    &__condition {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+  
+.block-left {
+  grid-column: span 4;
+  display: flex;
 }
 
+.game-icon {
+  width: 344px;
+  height: 236px;
+}
+
+
+}
