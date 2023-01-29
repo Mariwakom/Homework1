@@ -5,8 +5,9 @@
   }
 
   .top {
+    background-image: url(../img/Rectangle\ 1.png);
     height: 735px;
-    background-position-x: 31%;
+    
   }
 
   .header {
@@ -29,7 +30,7 @@
   }
   
   .menu {
-    height: 1221px;
+    padding-bottom: 127px;
     &__list {
       padding-top: 12;
     }
@@ -43,12 +44,14 @@
     width: 343px;
   }
 
-  
+
   .game-one {
     &__content {
-      padding-top: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      padding-top: 51px;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+    
     }
     &__title {
       font-size: 32px;
@@ -56,16 +59,14 @@
       text-align: center;
     }
     &__condition {
+      margin-bottom: 32px;
       font-size: 14px;
       line-height: 22px;
       text-align: center;
-    
     }
   }
   
-.block-left {
-  grid-column: span 4;
-}
+
 
 .game-icon {
   width: 344px;

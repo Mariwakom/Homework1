@@ -26,7 +26,7 @@ a{color:inherit;}
 }
 
 .top {
-  min-height: 1024px;
+  height: 1024px;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -126,6 +126,7 @@ background-color: #000915;
 }
 
 &__condition {
+  margin-top: 32px;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
@@ -133,25 +134,25 @@ background-color: #000915;
 }
 
 &__content {
-  padding-top: 233px;
-  padding-bottom: 233px ;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  gap: 135px;
 }
 }
 
 .block-left {
-  grid-column: span 6;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 32px;
-  justify-content: center;
+  max-width: 584px;
 }
 
-.block-right {
-  grid-column: span 5;
+.game-one__button {
+  margin-top: 32px;
 }
+
+
+
 
 
 

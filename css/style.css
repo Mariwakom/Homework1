@@ -80,7 +80,7 @@ a {
 }
 
 .top {
-  min-height: 1024px;
+  height: 1024px;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -176,29 +176,27 @@ a {
   color: #FFFFFF;
 }
 .game-one__condition {
+  margin-top: 32px;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
 }
 .game-one__content {
-  padding-top: 233px;
-  padding-bottom: 233px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  gap: 135px;
 }
 
 .block-left {
-  grid-column: span 6;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 32px;
-  justify-content: center;
+  max-width: 584px;
 }
 
-.block-right {
-  grid-column: span 5;
+.game-one__button {
+  margin-top: 32px;
 }
 
 @media (max-width: 767px) {
@@ -207,8 +205,8 @@ a {
     padding-right: 16px;
   }
   .top {
+    background-image: url(../img/Rectangle\ 1.png);
     height: 735px;
-    background-position-x: 31%;
   }
   .header__title {
     padding-top: 238px;
@@ -227,7 +225,7 @@ a {
     display: block;
   }
   .menu {
-    height: 1221px;
+    padding-bottom: 127px;
   }
   .menu__list {
     padding-top: 12;
@@ -239,9 +237,10 @@ a {
     width: 343px;
   }
   .game-one__content {
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    padding-top: 51px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
   }
   .game-one__title {
     font-size: 32px;
@@ -249,12 +248,10 @@ a {
     text-align: center;
   }
   .game-one__condition {
+    margin-bottom: 32px;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
-  }
-  .block-left {
-    grid-column: span 4;
   }
   .game-icon {
     width: 344px;
